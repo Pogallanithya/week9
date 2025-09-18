@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment #for deployment
 metadata:
   name: registration-deployment
 spec:
@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - name: registration
-        image: sriludone/registration:v1   # use your Docker Hub image
+        image: pogallanithya/registration:v1   # use your Docker Hub image
         ports:
         - containerPort: 5000
+
